@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Heebo:wght@300;400&display=swap');
+
+:root {
+    --color-prin: #F85183;
+    --color-font: #fff;
+    --color-cajas: #FF7DA4;
+    --font-title: 'Dancing Script', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 53px;
+    background-color: var(--color-prin);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+header a {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+.headright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+header img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-cajas);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-prin);
+    border-radius: 0px;
+}
+
+.stock {
+    width: 378px;
+    background-color: var(--color-cajas);
+    border-radius: 10px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stock ul {
+    margin: 0px 0px 0px 20px;
+}
+
+.stock h4 {
+    font-weight: normal;
+}
+
+.sabores,
+.adornos {
+    margin: 15px 0px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+section {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+
+section > h2 {
+    text-align: center;
+}
+
+.pedidosall {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(378px, 378px));
+    justify-content: center;
+    gap: 20px;
+}
+
+.cuerpopedido {
+    background-color: var(--color-cajas);
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 378px;
+}
+
+.caractsup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 0px 5px 0px;
+    width: 343px;
+}
+
+.caractinf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pedsabores,
+.pedadornos {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 170px;
+    width: 141px;
+    padding: 5px;
+}
+
+.pedadornos ul,
+.pedsabores ul{
+    margin: 0px 0px 0px 20px;
+}
+
+.pedadornos h4,
+.pedsabores h4 {
+    font-weight: normal;
+}
+
+.descript,
+.contact {
+    width: 343px;
+    background-color: #fff;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.descript h4,
+.contact h4 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.confirm p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.confirm button {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 17px;
+    color: var(--color-prin);
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+button:hover {
+    box-shadow: 0px 0px 16px 5px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 0px 0px 16px 5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 16px 5px rgba(255,255,255,0.75);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stock {
+        width: 550px;
+        font-size: 22px;
+    }
+
+    section > h2 {
+        font-size: 28px;
+    }
+
+    .pedsabores,
+    .pedadornos,
+    .descript,
+    .contact {
+        font-size: 18px;
+    }
+
+    .pedidosall {
+        gap: 50px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .stock {
+        width: 550px;
+        font-size: 24px;
+    }
+
+    section > h2 {
+        font-size: 30px;
+    }
+
+    .pedsabores,
+    .pedadornos,
+    .descript,
+    .contact {
+        font-size: 20px;
+    }
+
+    .pedidosall {
+        gap: 80px;
+    }
+}

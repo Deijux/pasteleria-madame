@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-co">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./img/logoHeader.png" alt="Logo Madame">
+        </a>
+        <div class="headright">
+            <a href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="./pages/pedidos.html">
+                <img src="./img/usuario.png" alt="Logo Usuario">
+            </a>
+        </div>
+    </header>
+    <div class="bienvenida">
+        <p>¿Que pastel <br> quieres hoy?</p>
+        <img src="./img/pasteliniciopage.jpg" alt="Pastel Inicio">
+    </div>
+    <div class="txtcatalogo">
+        <h1>Este es nuestro catalogo</h1>
+    </div>
+    <div class="filas">
+        <section>
+            <div class="headSect">
+                <p>Sabores</p>
+                <img src="./img/flecha-abajo.png" alt="Flecha Abajo">
+            </div>
+            <div class="content">
+                <div class="product">
+                    <img src="./img/Pastel-vainilla.jpg" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Pastel de vainilla<br> Precio: $30</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/Pastel-chocolate.jpg" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Pastel de chocolate<br> Precio: $30</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/Pastel-fresa.jpg" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Pastel de fresa<br> Precio: $30</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/Pastel-limón.jpg" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Pastel de limón<br> Precio: $30</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/coming soon.jpg" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Más sabores<br> proximamente!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="headSect">
+                <p>Adornos o cubierta</p>
+                <img src="./img/flecha-abajo.png" alt="Flecha Abajo">
+            </div>
+            <div class="content">
+                <div class="product">
+                    <img src="./img/Caramelo.png" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Caramelo<br> Precio: $10</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/Frutas.png" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Frutas<br> Precio: $15</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/Fondat.png" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Fondat<br> Precio: $20</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/chantilly.png" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Chantilly<br> Precio: $10</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./img/Merengue.png" alt="Pastel Vainilla">
+                    <div class="info">
+                        <p>Merengue<br> Precio: $10</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="formulario">
+        <p>Haz tu pedido</p>
+        <form action="#" method="post">
+            <div class="filasform">
+                <div class="filasform1">
+                    <div class="inputs">
+                        <p>Nombre:</p>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre aquí" required>
+                    </div>
+                    <div class="inputs">
+                        <p>Telefono:</p>
+                        <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono aquó" required>
+                    </div>
+                    <div class="inputs">
+                        <p>Correo electrónico:</p>
+                        <input type="email" name="emial" id="email" placeholder="Tu correo aquí" required>
+                    </div>
+                </div>
+                <div class="filasform2">
+                    <div class="inputs">
+                        <p>Selección:</p>
+                        <div class="seleccion">
+                            <div class="sabores">
+                                <p>Sabores</p>
+                                <label>
+                                    <input type="radio" name="sabor" value="vainilla"> Vainilla
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="sabor" value="chocolate"> Chocolate
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="sabor" value="fresa"> Fresa
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="sabor" value="limón"> Limón
+                                </label>
+                            </div>
+                            <div class="cubierta">
+                                <p>Cubierta</p>
+                                <input type="checkbox" name="caramelo" id="caramelo" value="caramelo">
+                                <label for="caramelo">Caramelo</label><br>
+                                <input type="checkbox" name="frutas" id="frutas" value="frutas">
+                                <label for="frutas">Frutas</label><br>
+                                <input type="checkbox" name="fondat" id="fondat" value="fondat">
+                                <label for="fondat">Fondat</label><br>
+                                <input type="checkbox" name="chantilly" id="chantilly" value="chantilly">
+                                <label for="chantilly">Chantilly</label><br>
+                                <input type="checkbox" name="merengue" id="merengue" value="merengue">
+                                <label for="merengue">Merengue</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <p>Descripción:</p>
+                        <textarea class="description" name="description" id="description"
+                            placeholder="Descripción del pastel" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Hacer pedido</button>
+        </form>
+    </section>
+    <footer>
+        <p>Encuentranos</p>
+        <div class="datos">
+            <p>Dirección: Cra 5ta 4-28 Local 3 <br> Ibagué - Tolima</p>
+            <p>Telefono: 3108761315 - 3117653473</p>
+            <p>Horario: Lun - Sab - 7:00 AM - 6:00 PM</p>
+        </div>
+    </footer>
+</body>
+
+</html>
