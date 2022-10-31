@@ -95,7 +95,7 @@ section {
     margin: 10px 0px 0px 0px;
 }
 
-section > h2 {
+section>h2 {
     text-align: center;
 }
 
@@ -142,7 +142,7 @@ section > h2 {
 }
 
 .pedadornos ul,
-.pedsabores ul{
+.pedsabores ul {
     margin: 0px 0px 0px 20px;
 }
 
@@ -183,9 +183,9 @@ section > h2 {
 }
 
 button:hover {
-    box-shadow: 0px 0px 16px 5px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 0px 0px 16px 5px rgba(255,255,255,0.75);
-    -moz-box-shadow: 0px 0px 16px 5px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 16px 5px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 0px 16px 5px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 16px 5px rgba(255, 255, 255, 0.75);
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -194,7 +194,7 @@ button:hover {
         font-size: 22px;
     }
 
-    section > h2 {
+    section>h2 {
         font-size: 28px;
     }
 
@@ -216,7 +216,7 @@ button:hover {
         font-size: 24px;
     }
 
-    section > h2 {
+    section>h2 {
         font-size: 30px;
     }
 
